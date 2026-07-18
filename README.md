@@ -81,3 +81,20 @@ python codigo.py
     *   `Apostila Jornada Python - Aula 1.pdf`: Material didático em PDF.
     *   `pegar_posicao.py`: Script auxiliar para identificar as coordenadas do mouse na tela.
     *   `gabarito.py`: Código de referência resolvido pela equipe de ensino.
+
+---
+
+## 🎓 Aprendizados e Relato de Experiência
+
+Quero, por meio deste, apresentar meus aprendizados durante o projeto **"Fundações & Seu Primeiro Robô"**.
+
+Consegui concluir com sucesso o projeto de **Automação de Cadastro de Produtos**, e posso dizer que foi uma experiência bastante desafiadora. Embora eu já tivesse desenvolvido anteriormente uma automação utilizando **Playwright**, e soubesse que esse tipo de projeto exige atenção aos detalhes, este desafio trouxe novos obstáculos.
+
+Apesar de parecer um projeto simples à primeira vista, durante o desenvolvimento surgiram diversos bugs que precisei investigar e corrigir. Cada problema solucionado representou uma oportunidade de aprendizado, pois muitas vezes foi necessário revisar, refazer e aprimorar partes do código até encontrar a solução correta.
+
+Acreditei que concluiria o projeto rapidamente por já possuir uma base de conhecimento em automação, mas os desafios encontrados mostraram que sempre há algo novo para aprender. No final, ver o robô funcionando perfeitamente tornou toda a dedicação extremamente gratificante.
+
+Satisfeito com o resultado, resolvi ir além do que havia sido proposto e implementei algumas melhorias no projeto, como a utilização de **f-strings** para tornar o código mais legível e a formatação dos valores monetários com o prefixo **R$**, duas casas decimais e separação decimal por vírgula, deixando a apresentação dos dados mais profissional e amigável ao usuário.
+
+Esse projeto reforçou a importância da persistência, da prática e da busca contínua por soluções, mostrando que cada desafio superado contribui diretamente para o meu crescimento como desenvolvedor.
+
