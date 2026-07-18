@@ -10,7 +10,7 @@ import time
 # pyautogui.click -> clicar em algum lugar da tela
 # pyautogui.hotkey -> combinação de teclas
 pyautogui.PAUSE = 0.5
-
+   
 # Passo 1: Entrar no sistema da empresa
 # abrir o navegador (chrome)
 pyautogui.press("win")
@@ -44,26 +44,35 @@ tabela = pd.read_csv("produtos.csv")
 print(tabela.to_string())
 
 for linha in tabela.index:
-    # Passo 4: Cadastrar 1º produto
+    # Passo 4: Cadastrar produto
     pyautogui.click(x=1196, y=288)
-    # Fazer uma pausa maior para garantir que o site carregue
     time.sleep(2)
+
     pyautogui.press("enter")
-    pyautogui.write(str(tabela.loc[linha, "codigo"]))
+
+    pyautogui.write(f'{tabela.loc[linha, "codigo"]}')
     pyautogui.press("tab")
-    pyautogui.write(str(tabela.loc[linha, "marca"]))
+
+    pyautogui.write(f'{tabela.loc[linha, "marca"]}')
     pyautogui.press("tab")
-    pyautogui.write(str(tabela.loc[linha, "tipo"]))
+
+    pyautogui.write(f'{tabela.loc[linha, "tipo"]}')
     pyautogui.press("tab")
-    pyautogui.write(str(tabela.loc[linha, "categoria"]))
+
+    pyautogui.write(f'{tabela.loc[linha, "categoria"]}')
     pyautogui.press("tab")
-    pyautogui.write(str(tabela.loc[linha, "preco_unitario"]))
+
+    pyautogui.write(f'R$ {tabela.loc[linha, "preco_unitario"]:.2f}'.replace(".", ","))
     pyautogui.press("tab")
-    pyautogui.write(str(tabela.loc[linha, "custo"]))
+
+    pyautogui.write(f'R$ {tabela.loc[linha, "custo"]:.2f}'.replace(".", ","))
     pyautogui.press("tab")
-    obs =(str(tabela.loc[linha, "obs"]))
-    if obs != "nan":
-        pyautogui.write(obs)
+
+    obs = tabela.loc[linha, "obs"]
+
+    if str(obs) != "nan":
+        pyautogui.write(f"{obs}")
+
     pyautogui.press("tab")
     pyautogui.press("enter")
 

@@ -25,9 +25,9 @@ Este projeto é um script de automação em Python que realiza o cadastro autom�
     *   Marca
     *   Tipo
     *   Categoria
-    *   Preço Unitário
-    *   Custo do Produto
-    *   Observações (se houver)
+    *   Preço Unitário (formatado automaticamente com prefixo `R$ ` e duas casas decimais separadas por vírgula)
+    *   Custo do Produto (formatado automaticamente com prefixo `R$ ` e duas casas decimais separadas por vírgula)
+    *   Observações (preenchido apenas se houver uma observação cadastrada na base de dados)
 5.  **Repetir o processo:** Envia o formulário, rola a página para cima e repete a operação para o próximo produto até cadastrar toda a lista.
 
 ---
